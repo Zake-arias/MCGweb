@@ -226,7 +226,7 @@ blockquote {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 .translucent-bg.blue:after {
-	background-color: rgba(255, 99, 71, 0.7);
+	background-color: rgba(102, 39, 27, 0.7);
 }
 .translucent-bg .container {
 	z-index: 3;

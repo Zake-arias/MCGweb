@@ -18,7 +18,7 @@
 
     <!-- Web Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext'
-          rel='stylesheet' type='text/css'>
+            rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
@@ -36,12 +36,12 @@
     <!-- Custom css -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- Bootstrap 4 Stylesheet -->
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- simple-bs-dialogStylesheet -->
     <link href="./dist/css/simple-bs-dialog.min.css" rel="stylesheet">
     <!-- Bootstrap 4 JavaScript -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <!-- simple-bs-dialog JavaScript -->
     <script src="./dist/js/simple-bs-dialog.min.js"></script>
 
@@ -181,132 +181,134 @@
                         </ul>
                     </div>
                 </div>
-                <div class="space"></div>
-                <h2>请一定要先阅读的帮助</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果卡在什么地方了，而且当时没有OP在的话请使用 /spawn
-                            命令传送到人里。游客也可使用 /sethome 来设定家。
-                            游客能使用的命令还有 /tpa 用户名，该命令可以传送到指定角色身边，不过需要对方同意。
-                            如果发现有奇怪的地形，说明那里正在准备地形或修改地形中。</p>
-                        <p>
-                            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客户端更新频繁，如果发现无法进入服务器，<br>1.检查是否改名了，<br>2.名字只能是英文和数字，<br>3.更新客户端。
-                            服务器使用了更新过的启动器。可以使用自带的更新功能。
-                            服务器并不是24小时都开着的，为了调试新MOD或者插件，服务器将关闭或禁止OP之外的人员进入，有问题请加群。</p>
-                        <p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                           aria-expanded="true" aria-controls="collapseOne">
-                                            Q：启动器如何使用？
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                     aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        A：启动器内建了游戏本体的下载功能，并且如果无法在本地找到Java环境，也会自动下载并安装Java。如果觉得下载速度不理想，可以下载完整离线包。
+                <div class="备用">
+                    <div class="space"></div>
+                    <h2>请一定要先阅读的帮助</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果卡在什么地方了，而且当时没有OP在的话请使用 /spawn
+                                命令传送到人里。游客也可使用 /sethome 来设定家。
+                                游客能使用的命令还有 /tpa 用户名，该命令可以传送到指定角色身边，不过需要对方同意。
+                                如果发现有奇怪的地形，说明那里正在准备地形或修改地形中。</p>
+                            <p>
+                                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客户端更新频繁，如果发现无法进入服务器，<br>1.检查是否改名了，<br>2.名字只能是英文和数字，<br>3.更新客户端。
+                                服务器使用了更新过的启动器。可以使用自带的更新功能。
+                                服务器并不是24小时都开着的，为了调试新MOD或者插件，服务器将关闭或禁止OP之外的人员进入，有问题请加群。</p>
+                            <p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                               aria-expanded="true" aria-controls="collapseOne">
+                                                Q：启动器如何使用？
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                         aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            A：启动器内建了游戏本体的下载功能，并且如果无法在本地找到Java环境，也会自动下载并安装Java。如果觉得下载速度不理想，可以下载完整离线包。
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Q：明明安装好了，打开启动器却依然要重新下载，这是怎么回事？
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        A：请不要移动启动器的位置。如果想要从桌面打开启动器，请建立一个快捷方式。
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                               href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Q：明明安装好了，打开启动器却依然要重新下载，这是怎么回事？
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            A：请不要移动启动器的位置。如果想要从桌面打开启动器，请建立一个快捷方式。
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Q：为什么我无法进入服务器？
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        A：请确定你的名字中仅有英文与数字，不支持中文名以及特殊符号。并且确定你的客户端已经更新到了最新。
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                               href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Q：为什么我无法进入服务器？
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            A：请确定你的名字中仅有英文与数字，不支持中文名以及特殊符号。并且确定你的客户端已经更新到了最新。
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading4">
-                                    <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
-                                                               data-parent="#accordion" href="#collapse4"
-                                                               aria-expanded="false" aria-controls="collapse4">
-                                        Q：进来了，我在哪儿？ </a></h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading4">
-                                    <div class="panel-body"> A：第一次进入服务器你的出生地点是人间之里旁边。之后进入服务器将保持你上次退出时的位置。</div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading5">
-                                    <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
-                                                               data-parent="#accordion" href="#collapse5"
-                                                               aria-expanded="false" aria-controls="collapse5">
-                                        Q：为什么我不能移动？ </a></h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading5">
-                                    <div class="panel-body"> 一开始是不能移动的，请先使用<span style="color:red"> /register </span>你要的密码命令注册ID。
-                                        请确保在进入游戏之前已经设置了自己的用户名。然后使用<span style="color:red"> /login </span>刚才注册的密码
-                                        命令来登录这个ID。已经注册过就可以直接使用/login登录了。
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading4">
+                                        <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                                   data-parent="#accordion" href="#collapse4"
+                                                                   aria-expanded="false" aria-controls="collapse4">
+                                            Q：进来了，我在哪儿？ </a></h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading4">
+                                        <div class="panel-body"> A：第一次进入服务器你的出生地点是人间之里旁边。之后进入服务器将保持你上次退出时的位置。</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading6">
-                                    <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
-                                                               data-parent="#accordion" href="#collapse6"
-                                                               aria-expanded="false" aria-controls="collapse6">
-                                        Q：为什么我不能拆掉方块也不能放出方块？ </a></h4>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading5">
+                                        <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                                   data-parent="#accordion" href="#collapse5"
+                                                                   aria-expanded="false" aria-controls="collapse5">
+                                            Q：为什么我不能移动？ </a></h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading5">
+                                        <div class="panel-body"> 一开始是不能移动的，请先使用<span style="color:red"> /register </span>你要的密码命令注册ID。
+                                            请确保在进入游戏之前已经设置了自己的用户名。然后使用<span style="color:red"> /login </span>刚才注册的密码
+                                            命令来登录这个ID。已经注册过就可以直接使用/login登录了。
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading6">
-                                    <div class="panel-body"> A：为防止破坏，幻想乡图默认游客是没有建筑权限的，只有在有建筑任务的时候才会给予权限，请加群关注建筑任务。</div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading6">
+                                        <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                                   data-parent="#accordion" href="#collapse6"
+                                                                   aria-expanded="false" aria-controls="collapse6">
+                                            Q：为什么我不能拆掉方块也不能放出方块？ </a></h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading6">
+                                        <div class="panel-body"> A：为防止破坏，幻想乡图默认游客是没有建筑权限的，只有在有建筑任务的时候才会给予权限，请加群关注建筑任务。</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading7">
-                                    <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
-                                                               data-parent="#accordion" href="#collapse7"
-                                                               aria-expanded="false" aria-controls="collapse7">
-                                        Q：我该怎么到其他地方去？ </a></h4>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading7">
+                                        <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                                   data-parent="#accordion" href="#collapse7"
+                                                                   aria-expanded="false" aria-controls="collapse7">
+                                            Q：我该怎么到其他地方去？ </a></h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading7">
+                                        <div class="panel-body"> A:啊吧啊吧啊吧</div>
+                                    </div>
                                 </div>
-                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading7">
-                                    <div class="panel-body"> A:啊吧啊吧啊吧</div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading8">
-                                    <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
-                                                               data-parent="#accordion" href="#collapse8"
-                                                               aria-expanded="false" aria-controls="collapse8">
-                                        Q：跑起来好累。 </a></h4>
-                                </div>
-                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="heading8">
-                                    <div class="panel-body"> A：请注意锻炼身体。</div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading8">
+                                        <h4 class="panel-title"><a class="collapsed" data-toggle="collapse"
+                                                                   data-parent="#accordion" href="#collapse8"
+                                                                   aria-expanded="false" aria-controls="collapse8">
+                                            Q：跑起来好累。 </a></h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading8">
+                                        <div class="panel-body"> A：请注意锻炼身体。</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
